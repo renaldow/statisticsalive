@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		  <title>Progress Bar</title>
+		  <meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+		  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	</head>
+
+	<body>
+
+	<button onclick="sendAJAX_GETRequest()">Click Me</button>
+
+	<label id="text">Text</label>
+
+	<h2>Progress Bar With Label</h2>
+	  	<div class="progress">
+		  <div class="progress-bar progress-bar" role="progressbar"
+		  aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width:0%">
+		    
+		  </div>
+		</div>
+
+
+		<h2>File Upload Example</h2>
+
+		<form action="http://162.243.146.199:8080/rey2/webapi/files/upload" method="post" enctype="multipart/form-data">
+
+			<p>
+				Select a file: <input type="file" name="file" size="45" />
+			</p>
+
+			<input type="submit" value="Upload File" />
+
+		</form>
+
+		<a href="http://162.243.146.199:8080/rey2/webapi/files/txt">Download Text File</a>
+
+	<script src="js/logic.js"></script>
+
+	</body>
+
+
+</html>
+
